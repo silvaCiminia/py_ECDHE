@@ -8,9 +8,9 @@ Returns a 64 byte private key and a 128 byte public key.
 
 * To generate a keypair:
 
-    `(myPublicKey, myPrivateKey) = py_ECDHE.make_keypair()`
+    `(myPublicKey, myPrivateKey) = ecdhe.make_keypair()`
 
 * To generate a shared secret:
 
-    `sharedSecret = scalar_mult(myPrivateKey, theirPublicKey)`
+    `sharedSecret = ecdhe.scalar_mult(myPrivateKey, theirPublicKey)`
     
